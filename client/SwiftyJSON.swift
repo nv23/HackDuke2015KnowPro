@@ -184,7 +184,7 @@ public struct JSON {
 }
 
 // MARK: - CollectionType, SequenceType, Indexable
-extension JSON : Swift.CollectionType, Swift.SequenceType, Swift.Indexable {
+extension JSON : Swift.CollectionType, Swift.SequenceType { //Swift.Indexable
 
     public typealias Generator = JSONGenerator
 
