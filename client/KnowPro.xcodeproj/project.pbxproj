@@ -9,8 +9,11 @@
 /* Begin PBXBuildFile section */
 		1FE42F1D1BEDA52500354065 /* LoginPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE42F1A1BEDA52500354065 /* LoginPageViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		1FE42F1E1BEDA52500354065 /* RegisterPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE42F1B1BEDA52500354065 /* RegisterPageViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		1FE42F1F1BEDA52500354065 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE42F1C1BEDA52500354065 /* SecondViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		2B9EB562BDAB81094102C2FE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B26AE5086B67DE0C811957F /* libPods.a */; };
+		53381E551BEEA3A400A45C39 /* CourseStoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53381E541BEEA3A400A45C39 /* CourseStoreViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		53381E571BEEA91500A45C39 /* iCarousel in Resources */ = {isa = PBXBuildFile; fileRef = 53381E561BEEA91500A45C39 /* iCarousel */; settings = {ASSET_TAGS = (); }; };
+		53381E581BEEA91500A45C39 /* iCarousel in Resources */ = {isa = PBXBuildFile; fileRef = 53381E561BEEA91500A45C39 /* iCarousel */; settings = {ASSET_TAGS = (); }; };
+		53381E591BEEA91500A45C39 /* iCarousel in Resources */ = {isa = PBXBuildFile; fileRef = 53381E561BEEA91500A45C39 /* iCarousel */; settings = {ASSET_TAGS = (); }; };
 		53391E111BE74975004C26A2 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53391E101BE74975004C26A2 /* SwiftyJSON.swift */; settings = {ASSET_TAGS = (); }; };
 		53F0C7C71BCA212300FD66CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F0C7C61BCA212300FD66CF /* AppDelegate.swift */; };
 		53F0C7CA1BCA212300FD66CF /* KnowPro.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 53F0C7C81BCA212300FD66CF /* KnowPro.xcdatamodeld */; };
@@ -44,8 +47,9 @@
 		1B26AE5086B67DE0C811957F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FE42F1A1BEDA52500354065 /* LoginPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPageViewController.swift; sourceTree = "<group>"; };
 		1FE42F1B1BEDA52500354065 /* RegisterPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterPageViewController.swift; sourceTree = "<group>"; };
-		1FE42F1C1BEDA52500354065 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		43AF7A0816A3910747EAFB0B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		53381E541BEEA3A400A45C39 /* CourseStoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseStoreViewController.swift; sourceTree = "<group>"; };
+		53381E561BEEA91500A45C39 /* iCarousel */ = {isa = PBXFileReference; lastKnownFileType = folder; path = iCarousel; sourceTree = "<group>"; };
 		53391E101BE74975004C26A2 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		53F0C7C31BCA212300FD66CF /* KnowPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KnowPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53F0C7C61BCA212300FD66CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -94,6 +98,7 @@
 		53391E0F1BE74904004C26A2 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				53381E561BEEA91500A45C39 /* iCarousel */,
 				53391E101BE74975004C26A2 /* SwiftyJSON.swift */,
 			);
 			name = Library;
@@ -127,9 +132,9 @@
 			children = (
 				53F0C7C61BCA212300FD66CF /* AppDelegate.swift */,
 				53F0C7CF1BCA212300FD66CF /* Main.storyboard */,
+				53381E541BEEA3A400A45C39 /* CourseStoreViewController.swift */,
 				1FE42F1A1BEDA52500354065 /* LoginPageViewController.swift */,
 				1FE42F1B1BEDA52500354065 /* RegisterPageViewController.swift */,
-				1FE42F1C1BEDA52500354065 /* SecondViewController.swift */,
 				53F0C7D21BCA212300FD66CF /* Assets.xcassets */,
 				53F0C7D41BCA212300FD66CF /* LaunchScreen.storyboard */,
 				53F0C7D71BCA212300FD66CF /* Info.plist */,
@@ -281,6 +286,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53381E571BEEA91500A45C39 /* iCarousel in Resources */,
 				53F0C7D61BCA212300FD66CF /* LaunchScreen.storyboard in Resources */,
 				53F0C7D31BCA212300FD66CF /* Assets.xcassets in Resources */,
 				53F0C7D11BCA212300FD66CF /* Main.storyboard in Resources */,
@@ -291,6 +297,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53381E581BEEA91500A45C39 /* iCarousel in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +305,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53381E591BEEA91500A45C39 /* iCarousel in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,8 +364,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1FE42F1F1BEDA52500354065 /* SecondViewController.swift in Sources */,
 				53F0C7CA1BCA212300FD66CF /* KnowPro.xcdatamodeld in Sources */,
+				53381E551BEEA3A400A45C39 /* CourseStoreViewController.swift in Sources */,
 				1FE42F1E1BEDA52500354065 /* RegisterPageViewController.swift in Sources */,
 				53F0C7C71BCA212300FD66CF /* AppDelegate.swift in Sources */,
 				840CA7F41BEEA3D70011360D /* CourseCell.swift in Sources */,
