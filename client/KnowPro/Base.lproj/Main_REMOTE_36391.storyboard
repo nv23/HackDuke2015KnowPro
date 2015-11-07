@@ -117,22 +117,8 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Favorites" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3qh-MP-5MA">
-                                <rect key="frame" x="20" y="28" width="72" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="alm-eX-0GV"/>
-                                    <constraint firstAttribute="width" constant="72" id="nuL-m6-C3H"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="3qh-MP-5MA" firstAttribute="top" secondItem="JG8-Ly-gd9" secondAttribute="bottom" constant="8" id="mQW-Hl-FcD"/>
-                            <constraint firstItem="3qh-MP-5MA" firstAttribute="leading" secondItem="LN3-IB-K4A" secondAttribute="leading" constant="20" id="reT-5f-spe"/>
-                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="MuC-3D-CaR"/>
                 </viewController>
@@ -350,12 +336,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4l3-oP-qIl">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4l3-oP-qIl">
                                 <rect key="frame" x="139" y="460" width="42" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="PM1-rk-0Tr"/>
-                                    <constraint firstAttribute="width" constant="42" id="agQ-yM-kb4"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
                                 <state key="normal" title="Log in"/>
                                 <connections>
@@ -371,12 +353,8 @@
                                     <action selector="resetPassword:" destination="Nq3-rd-eVJ" eventType="touchUpInside" id="Sto-eu-UgV"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="  Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="viO-sD-zYx">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="  Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="viO-sD-zYx">
                                 <rect key="frame" x="56" y="409" width="211" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="211" id="3TQ-NP-b8c"/>
-                                    <constraint firstAttribute="height" constant="30" id="9HK-20-9ry"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -395,47 +373,27 @@
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="  Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="z4h-JH-PFq">
                                 <rect key="frame" x="56" y="347" width="211" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="2Sn-Ki-t6r"/>
-                                    <constraint firstAttribute="width" constant="211" id="f3X-Cd-XQJ"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="1gi-tU-qUB">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="313"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleAspectFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="XgJ-KN-fWP">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="313"/>
-                                        <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="NtH-I0-JUm">
-                                                <rect key="frame" x="0.0" y="0.0" width="320" height="313"/>
-                                                <subviews>
-                                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" image="imageMask" translatesAutoresizingMaskIntoConstraints="NO" id="9Ov-Pl-EE1">
-                                                        <rect key="frame" x="0.0" y="0.0" width="320" height="313"/>
-                                                    </imageView>
-                                                </subviews>
-                                                <constraints>
-                                                    <constraint firstItem="9Ov-Pl-EE1" firstAttribute="centerX" secondItem="NtH-I0-JUm" secondAttribute="centerX" id="d0p-yo-YcD"/>
-                                                    <constraint firstItem="9Ov-Pl-EE1" firstAttribute="top" secondItem="NtH-I0-JUm" secondAttribute="top" id="lDM-fj-283"/>
-                                                    <constraint firstItem="9Ov-Pl-EE1" firstAttribute="leading" secondItem="NtH-I0-JUm" secondAttribute="leading" id="vWA-yV-WWs"/>
-                                                    <constraint firstAttribute="trailing" secondItem="9Ov-Pl-EE1" secondAttribute="trailing" id="zLB-RC-ffg"/>
-                                                </constraints>
-                                            </stackView>
-                                        </subviews>
-                                    </stackView>
-                                </subviews>
-                            </stackView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" image="imageMask" translatesAutoresizingMaskIntoConstraints="NO" id="9Ov-Pl-EE1">
+                                <rect key="frame" x="20" y="0.0" width="285" height="302"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="reX-zw-yGy">
-                                <rect key="frame" x="20" y="310" width="280" height="21"/>
+                                <rect key="frame" x="20" y="286" width="280" height="21"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="z4h-JH-PFq" firstAttribute="top" secondItem="9Ov-Pl-EE1" secondAttribute="bottom" constant="45" id="2da-Cu-He3"/>
+                            <constraint firstItem="9Ov-Pl-EE1" firstAttribute="leading" secondItem="Qik-Nu-mng" secondAttribute="leadingMargin" constant="-15" id="Sg4-hG-YQr"/>
+                            <constraint firstItem="9Ov-Pl-EE1" firstAttribute="top" secondItem="Qik-Nu-mng" secondAttribute="topMargin" id="mrF-zR-YTc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9Ov-Pl-EE1" secondAttribute="trailing" constant="-15" id="ygg-ph-5dU"/>
+                        </constraints>
                     </view>
-                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="passwordText" destination="viO-sD-zYx" id="GUr-ZZ-3kY"/>
