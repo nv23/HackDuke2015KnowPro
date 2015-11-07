@@ -226,6 +226,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Wp-Mz-erf">
                                 <rect key="frame" x="110" y="518" width="101" height="30"/>
                                 <state key="normal" title="continue log in"/>
+                                <connections>
+                                    <segue destination="2Y3-A9-GsT" kind="show" id="EpK-nG-e4a"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -245,11 +248,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ucm-yt-73S" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-436" y="426"/>
+            <point key="canvasLocation" x="-454" y="349"/>
         </scene>
     </scenes>
     <resources>
         <image name="imageMask" width="320" height="313"/>
         <image name="logo2_Fotor" width="116" height="116"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="EpK-nG-e4a"/>
+    </inferredMetricsTieBreakers>
 </document>
