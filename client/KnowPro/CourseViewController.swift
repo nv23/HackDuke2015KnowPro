@@ -23,13 +23,19 @@ class CourseViewController: UITableViewController {
         return courses.count
     }
     
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("CourseCell")!;
+        let dequeued: AnyObject = tableView.dequeueReusableCellWithIdentifier("CourseCell", forIndexPath: indexPath)
         
-        cell.textLabel?.text = courses[indexPath.row]
+        let course_cell = dequeued as! CourseCell
         
-        return cell
+        course_cell.courseText?.text = courses[indexPath.row]
         
+        course_cell.backgroundColor = UIColor(red: 1, green: 0.9, blue: 0.8, alpha: 1)
+        
+        
+        return course_cell
     }
+
     
 }
