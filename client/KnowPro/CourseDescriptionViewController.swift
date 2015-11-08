@@ -18,7 +18,6 @@ class CourseDescriptionViewController: UIViewController {
         super.viewDidLoad()
         print(selectedCourse.CourseName)
         self.CourseName.text = selectedCourse.CourseName
-        
     }
     
     override func didReceiveMemoryWarning() {
