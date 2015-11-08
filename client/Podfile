@@ -1,6 +1,10 @@
 platform :ios, '7.0'
 pod "AFNetworking"
 pod "iCarousel"
-pod "YouTube-Player-iOS-Helper"
+
+target 'KnowPro' do
+	use_frameworks!
+	pod 'youtube-ios-player-helper'
+end
 
 xcodeproj 'KnowPro.xcodeproj'

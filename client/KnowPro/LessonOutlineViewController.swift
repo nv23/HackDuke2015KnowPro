@@ -9,9 +9,10 @@
 import Foundation
 import UIKit
 
-class LessonOutlineViewController: UITableViewController {
+class LessonOutlineViewController: UITableViewController{
     
     var lessons = [LessonContent]()
+    var selectedLesson : LessonContent = LessonContent(name: "",URL: "")
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,5 +42,22 @@ class LessonOutlineViewController: UITableViewController {
         
         return l_cell
     }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        tableView.deselectRowAtIndexPath(indexPath, animated: false)
+        selectedLesson = self.lessons[indexPath.row]
+        //studentSelected.viewed = true
+        tableView.reloadRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.None)
+        performSegueWithIdentifier("URLHomeworkSegue", sender: self)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if(segue.identifier=="URLHomeworkSegue"){
+            let viewController:LessonPlayViewController = segue.destinationViewController as! LessonPlayViewController
+            viewController.lesson = selectedLesson
+            
+        }
+    }
+
     
 }

@@ -441,7 +441,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="detailDisclosureButton" indentationWidth="10" reuseIdentifier="LessonCell" id="XzO-rY-hSA">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="detailDisclosureButton" indentationWidth="10" reuseIdentifier="LessonCell" id="XzO-rY-hSA" customClass="Lesson">
                                 <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XzO-rY-hSA" id="7II-r6-zKy">
@@ -456,15 +456,18 @@
                         </connections>
                     </tableView>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <segue destination="zAw-CM-gOz" kind="show" identifier="URLHomeworkSegue" id="rH0-Am-LFy"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wli-bb-ItM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1600" y="394"/>
         </scene>
-        <!--View Controller-->
+        <!--Lesson Play View Controller-->
         <scene sceneID="eDo-TO-n5i">
             <objects>
-                <viewController id="zAw-CM-gOz" sceneMemberID="viewController">
+                <viewController id="zAw-CM-gOz" customClass="LessonPlayViewController" customModule="KnowPro" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="RS7-0y-ifh"/>
                         <viewControllerLayoutGuide type="bottom" id="kKN-hX-Eel"/>
@@ -472,9 +475,34 @@
                     <view key="view" contentMode="scaleAspectFit" id="u0j-t7-7yO">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Lesson Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EHj-HU-9eC">
+                                <rect key="frame" x="106" y="33" width="109" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="RXW-IP-ZVU"/>
+                                    <constraint firstAttribute="width" constant="109" id="hQx-43-Eme"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g8v-Ob-xPu">
+                                <rect key="frame" x="10" y="184" width="300" height="200"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="g8v-Ob-xPu" firstAttribute="centerY" secondItem="u0j-t7-7yO" secondAttribute="centerY" id="Eae-Kk-38A"/>
+                            <constraint firstItem="kKN-hX-Eel" firstAttribute="top" secondItem="g8v-Ob-xPu" secondAttribute="bottom" constant="140" id="U79-g2-BLU"/>
+                            <constraint firstItem="g8v-Ob-xPu" firstAttribute="centerX" secondItem="u0j-t7-7yO" secondAttribute="centerX" id="aMc-sQ-DUY"/>
+                            <constraint firstAttribute="trailing" secondItem="g8v-Ob-xPu" secondAttribute="trailing" constant="10" id="r8X-PE-kbf"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="webView" destination="g8v-Ob-xPu" id="jba-Cs-hRE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Bd-J4-rfg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

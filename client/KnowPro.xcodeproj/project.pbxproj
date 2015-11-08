@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D1BA41728A9C3F9C9AD6A2C /* Pods_KnowPro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F2E90C80B4343FCA9211200 /* Pods_KnowPro.framework */; };
 		1FE42F1D1BEDA52500354065 /* LoginPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE42F1A1BEDA52500354065 /* LoginPageViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		1FE42F1E1BEDA52500354065 /* RegisterPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE42F1B1BEDA52500354065 /* RegisterPageViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		2B9EB562BDAB81094102C2FE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B26AE5086B67DE0C811957F /* libPods.a */; };
@@ -16,7 +17,9 @@
 		53381E6B1BEF1C8100A45C39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53381E6A1BEF1C8100A45C39 /* Main.storyboard */; settings = {ASSET_TAGS = (); }; };
 		53381E6D1BEF248800A45C39 /* Lessons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53381E6C1BEF248800A45C39 /* Lessons.swift */; settings = {ASSET_TAGS = (); }; };
 		53381E711BEF251E00A45C39 /* CourseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53381E701BEF251E00A45C39 /* CourseDetailViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		53381E731BEF304300A45C39 /* LessonPlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53381E721BEF304300A45C39 /* LessonPlayViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		53391E111BE74975004C26A2 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53391E101BE74975004C26A2 /* SwiftyJSON.swift */; settings = {ASSET_TAGS = (); }; };
+		5374E58F1BEF479C00767369 /* YTPlayerView-iframe-player.html in Resources */ = {isa = PBXBuildFile; fileRef = 5374E58E1BEF479C00767369 /* YTPlayerView-iframe-player.html */; settings = {ASSET_TAGS = (); }; };
 		53F0C7C71BCA212300FD66CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F0C7C61BCA212300FD66CF /* AppDelegate.swift */; };
 		53F0C7D31BCA212300FD66CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53F0C7D21BCA212300FD66CF /* Assets.xcassets */; };
 		53F0C7D61BCA212300FD66CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53F0C7D41BCA212300FD66CF /* LaunchScreen.storyboard */; };
@@ -49,13 +52,17 @@
 		1FE42F1A1BEDA52500354065 /* LoginPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPageViewController.swift; sourceTree = "<group>"; };
 		1FE42F1B1BEDA52500354065 /* RegisterPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterPageViewController.swift; sourceTree = "<group>"; };
 		43AF7A0816A3910747EAFB0B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		4F2E90C80B4343FCA9211200 /* Pods_KnowPro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KnowPro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		53381E541BEEA3A400A45C39 /* CourseStoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseStoreViewController.swift; sourceTree = "<group>"; };
 		53381E5A1BEEAED000A45C39 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		53381E621BEEDFEA00A45C39 /* LessonContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LessonContent.swift; sourceTree = "<group>"; };
 		53381E6A1BEF1C8100A45C39 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		53381E6C1BEF248800A45C39 /* Lessons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lessons.swift; sourceTree = "<group>"; };
 		53381E701BEF251E00A45C39 /* CourseDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseDetailViewController.swift; sourceTree = "<group>"; };
+		53381E721BEF304300A45C39 /* LessonPlayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LessonPlayViewController.swift; sourceTree = "<group>"; };
 		53391E101BE74975004C26A2 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		5374E58D1BEF32DB00767369 /* KnowPro-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KnowPro-Bridging-Header.h"; sourceTree = "<group>"; };
+		5374E58E1BEF479C00767369 /* YTPlayerView-iframe-player.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "YTPlayerView-iframe-player.html"; sourceTree = "<group>"; };
 		53F0C7C31BCA212300FD66CF /* KnowPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KnowPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53F0C7C61BCA212300FD66CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		53F0C7D21BCA212300FD66CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -80,6 +87,7 @@
 			files = (
 				53381E611BEED26000A45C39 /* QuartzCore.framework in Frameworks */,
 				2B9EB562BDAB81094102C2FE /* libPods.a in Frameworks */,
+				0D1BA41728A9C3F9C9AD6A2C /* Pods_KnowPro.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				53391E101BE74975004C26A2 /* SwiftyJSON.swift */,
+				5374E58E1BEF479C00767369 /* YTPlayerView-iframe-player.html */,
 			);
 			name = Library;
 			sourceTree = "<group>";
@@ -142,6 +151,8 @@
 				53381E541BEEA3A400A45C39 /* CourseStoreViewController.swift */,
 				53381E701BEF251E00A45C39 /* CourseDetailViewController.swift */,
 				840CA7F71BEEE18E0011360D /* LessonOutlineViewController.swift */,
+				53381E721BEF304300A45C39 /* LessonPlayViewController.swift */,
+				5374E58D1BEF32DB00767369 /* KnowPro-Bridging-Header.h */,
 				53F0C7D71BCA212300FD66CF /* Info.plist */,
 				53F0C7D41BCA212300FD66CF /* LaunchScreen.storyboard */,
 				840CA7F11BEEA3290011360D /* CourseViewController.swift */,
@@ -175,6 +186,7 @@
 			children = (
 				53381E5A1BEEAED000A45C39 /* QuartzCore.framework */,
 				1B26AE5086B67DE0C811957F /* libPods.a */,
+				4F2E90C80B4343FCA9211200 /* Pods_KnowPro.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -297,6 +309,7 @@
 			files = (
 				53381E6B1BEF1C8100A45C39 /* Main.storyboard in Resources */,
 				53F0C7D61BCA212300FD66CF /* LaunchScreen.storyboard in Resources */,
+				5374E58F1BEF479C00767369 /* YTPlayerView-iframe-player.html in Resources */,
 				53F0C7D31BCA212300FD66CF /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -330,7 +343,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KnowPro/Pods-KnowPro-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		7193ABE8B489C20CA1D8C480 /* Embed Pods Frameworks */ = {
@@ -345,7 +358,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KnowPro/Pods-KnowPro-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		9F6D528D717B7F4EAAF63B22 /* Check Pods Manifest.lock */ = {
@@ -380,6 +393,7 @@
 				53381E711BEF251E00A45C39 /* CourseDetailViewController.swift in Sources */,
 				53391E111BE74975004C26A2 /* SwiftyJSON.swift in Sources */,
 				840CA7F21BEEA3290011360D /* CourseViewController.swift in Sources */,
+				53381E731BEF304300A45C39 /* LessonPlayViewController.swift in Sources */,
 				53381E631BEEDFEA00A45C39 /* LessonContent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -517,6 +531,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = KnowPro/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.duke.Tianchan.KnowPro;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -532,6 +547,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = KnowPro/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.duke.Tianchan.KnowPro;
 				PRODUCT_NAME = "$(TARGET_NAME)";
