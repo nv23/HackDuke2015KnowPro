@@ -8,9 +8,13 @@
 
 import UIKit
 
+var NetworkingCourse = CourseContent()
+
 class CourseStoreViewController: UIViewController, iCarouselDataSource, iCarouselDelegate {
     
     var courses : NSMutableArray = ["art", "chemistry", "econ", "french", "history", "linear algebra", "literature", "modern biology"];
+    
+    
     
     @IBOutlet weak var vwCarousel: iCarousel!
 
