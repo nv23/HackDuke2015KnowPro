@@ -11,6 +11,7 @@ import Foundation
 import UIKit
 class CourseContent: NSObject {
     
+    var CourseName : String = ""
     var Lessons : [LessonContent] = []
     var Description : String = ""
     var CourseQuality : [Int] = []
