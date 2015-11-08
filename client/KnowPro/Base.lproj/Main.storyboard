@@ -319,13 +319,6 @@
                                     <segue destination="rcu-qE-qhD" kind="show" id="tCe-iY-3dG"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="view-offer-button" translatesAutoresizingMaskIntoConstraints="NO" id="YYf-hx-eqj">
-                                <rect key="frame" x="98" y="485" width="124" height="39"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="124" id="KVo-2B-eef"/>
-                                    <constraint firstAttribute="width" secondItem="YYf-hx-eqj" secondAttribute="height" multiplier="124:39" id="u7T-bk-wgh"/>
-                                </constraints>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Upgrade to premium to get your" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vig-fb-eoo">
                                 <rect key="frame" x="20" y="432" width="286" height="31"/>
                                 <color key="tintColor" red="0.21359009040797963" green="0.4702888257575758" blue="0.29690027028994825" alpha="1" colorSpace="calibratedRGB"/>
@@ -333,27 +326,39 @@
                                 <color key="textColor" red="0.2502066019100801" green="0.37271148989898994" blue="0.26592209308516401" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="highlightedColor" red="0.14781512290982171" green="0.31646543560606055" blue="0.13053396879923762" alpha="1" colorSpace="calibratedRGB"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="personal homework instructor!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pSF-Hk-bOs">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="personal homework instructor!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pSF-Hk-bOs">
                                 <rect key="frame" x="20" y="452" width="286" height="31"/>
                                 <color key="tintColor" red="0.21359009040797963" green="0.4702888257575758" blue="0.29690027028994825" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.2502066019100801" green="0.37271148989898994" blue="0.26592209308516401" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="highlightedColor" red="0.23042261093525795" green="0.31646543560606055" blue="0.22160107788940703" alpha="1" colorSpace="calibratedRGB"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GDq-jM-zMa">
+                                <rect key="frame" x="103" y="479" width="114" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="114" id="NRe-th-ezu"/>
+                                    <constraint firstAttribute="width" secondItem="GDq-jM-zMa" secondAttribute="height" multiplier="114:37" id="SSu-tZ-nfP"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="view-offer-button"/>
+                                <connections>
+                                    <segue destination="qTL-Jh-xiU" kind="show" id="3Em-B4-J5y"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="sgL-mh-PNS" firstAttribute="width" secondItem="xku-89-w4E" secondAttribute="width" id="1bx-0M-I0M"/>
                             <constraint firstAttribute="leadingMargin" secondItem="UtG-yN-oY7" secondAttribute="leading" id="Brz-w4-UTJ"/>
                             <constraint firstItem="g6I-5v-AWg" firstAttribute="leading" secondItem="LQA-BS-4KM" secondAttribute="trailing" constant="8" id="Ew9-2O-ndp"/>
-                            <constraint firstItem="YYf-hx-eqj" firstAttribute="centerX" secondItem="e4x-ai-1hN" secondAttribute="centerX" id="HdS-hs-7ib"/>
                             <constraint firstItem="sgL-mh-PNS" firstAttribute="centerY" secondItem="LQA-BS-4KM" secondAttribute="centerY" id="Mt7-nP-ktd"/>
                             <constraint firstItem="sgL-mh-PNS" firstAttribute="width" secondItem="g6I-5v-AWg" secondAttribute="width" id="OFm-AP-mK6"/>
-                            <constraint firstItem="7eP-G3-8YA" firstAttribute="top" secondItem="YYf-hx-eqj" secondAttribute="bottom" id="Oxm-Mc-CaK"/>
                             <constraint firstAttribute="trailingMargin" secondItem="g6I-5v-AWg" secondAttribute="trailing" constant="60" id="R1r-4a-UhS"/>
+                            <constraint firstItem="7eP-G3-8YA" firstAttribute="top" secondItem="GDq-jM-zMa" secondAttribute="bottom" constant="8" id="UOY-u3-XNU"/>
                             <constraint firstAttribute="trailingMargin" secondItem="UtG-yN-oY7" secondAttribute="trailing" id="WC2-XF-9Bx"/>
                             <constraint firstItem="LQA-BS-4KM" firstAttribute="leading" secondItem="xku-89-w4E" secondAttribute="trailing" constant="8" id="Zw2-ad-8wX"/>
                             <constraint firstItem="UtG-yN-oY7" firstAttribute="top" secondItem="xku-89-w4E" secondAttribute="bottom" constant="13" id="bLp-Og-sNM"/>
+                            <constraint firstItem="GDq-jM-zMa" firstAttribute="top" secondItem="pSF-Hk-bOs" secondAttribute="bottom" constant="-4" id="bcx-Ra-Wvt"/>
+                            <constraint firstItem="GDq-jM-zMa" firstAttribute="centerX" secondItem="e4x-ai-1hN" secondAttribute="centerX" id="cf1-4s-AcS"/>
                             <constraint firstItem="vWY-dM-T9Z" firstAttribute="centerX" secondItem="e4x-ai-1hN" secondAttribute="centerX" id="e5k-W7-mS5"/>
                             <constraint firstItem="NvG-pI-BSZ" firstAttribute="top" secondItem="W2J-b4-RTb" secondAttribute="bottom" constant="8" id="eg4-pz-r9I"/>
                             <constraint firstAttribute="leadingMargin" secondItem="vWY-dM-T9Z" secondAttribute="leading" id="gHS-Iq-0xF"/>
@@ -391,13 +396,21 @@
                     <view key="view" contentMode="scaleToFill" id="hnC-Xy-YOT">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Upgrade to Premium" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IbD-v5-CzB">
+                                <rect key="frame" x="81" y="28" width="159" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UuB-LZ-Sve" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1618" y="-592"/>
+            <point key="canvasLocation" x="1650" y="-514"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="h47-xW-032">
