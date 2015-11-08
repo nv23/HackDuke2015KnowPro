@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Nq3-rd-eVJ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8152.3" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Nq3-rd-eVJ">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8124.4"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -308,13 +308,6 @@
                                     <segue destination="rcu-qE-qhD" kind="show" id="tCe-iY-3dG"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Upgrade to premium to get your" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vig-fb-eoo">
-                                <rect key="frame" x="17" y="432" width="286" height="31"/>
-                                <color key="tintColor" red="0.21359009040797963" green="0.4702888257575758" blue="0.29690027028994825" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.2502066019100801" green="0.37271148989898994" blue="0.26592209308516401" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="highlightedColor" red="0.14781512290982171" green="0.31646543560606055" blue="0.13053396879923762" alpha="1" colorSpace="calibratedRGB"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="personal homework instructor!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pSF-Hk-bOs">
                                 <rect key="frame" x="17" y="452" width="286" height="31"/>
                                 <color key="tintColor" red="0.21359009040797963" green="0.4702888257575758" blue="0.29690027028994825" alpha="1" colorSpace="calibratedRGB"/>
@@ -351,18 +344,25 @@
                                 <color key="textColor" red="0.0" green="0.28261204769736842" blue="0.12415193256578946" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Upgrade to premium to get your" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vig-fb-eoo">
+                                <rect key="frame" x="17" y="419" width="286" height="31"/>
+                                <color key="tintColor" red="0.21359009040797963" green="0.4702888257575758" blue="0.29690027028994825" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.2502066019100801" green="0.37271148989898994" blue="0.26592209308516401" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.14781512290982171" green="0.31646543560606055" blue="0.13053396879923762" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="V2t-eK-LlT" firstAttribute="centerX" secondItem="e4x-ai-1hN" secondAttribute="centerX" id="3Ho-1t-ju9"/>
                             <constraint firstAttribute="trailingMargin" secondItem="V2t-eK-LlT" secondAttribute="trailing" constant="-1" id="4Sv-2I-XOd"/>
                             <constraint firstItem="pSF-Hk-bOs" firstAttribute="centerX" secondItem="e4x-ai-1hN" secondAttribute="centerX" id="9Gr-y4-eLN"/>
-                            <constraint firstItem="pSF-Hk-bOs" firstAttribute="top" secondItem="vig-fb-eoo" secondAttribute="bottom" constant="-11" id="BrS-j1-IgG"/>
                             <constraint firstAttribute="leadingMargin" secondItem="UtG-yN-oY7" secondAttribute="leading" id="Brz-w4-UTJ"/>
                             <constraint firstItem="V2t-eK-LlT" firstAttribute="leading" secondItem="e4x-ai-1hN" secondAttribute="leadingMargin" constant="-2" id="Rza-jp-QnU"/>
                             <constraint firstItem="7eP-G3-8YA" firstAttribute="top" secondItem="GDq-jM-zMa" secondAttribute="bottom" constant="8" id="UOY-u3-XNU"/>
                             <constraint firstItem="vig-fb-eoo" firstAttribute="centerX" secondItem="e4x-ai-1hN" secondAttribute="centerX" id="Vox-dF-GiX"/>
                             <constraint firstAttribute="trailingMargin" secondItem="UtG-yN-oY7" secondAttribute="trailing" id="WC2-XF-9Bx"/>
+                            <constraint firstItem="pSF-Hk-bOs" firstAttribute="top" secondItem="vig-fb-eoo" secondAttribute="bottom" constant="2" id="WTp-XI-lJx"/>
                             <constraint firstItem="GDq-jM-zMa" firstAttribute="top" secondItem="pSF-Hk-bOs" secondAttribute="bottom" constant="-4" id="bcx-Ra-Wvt"/>
                             <constraint firstItem="GDq-jM-zMa" firstAttribute="centerX" secondItem="e4x-ai-1hN" secondAttribute="centerX" id="cf1-4s-AcS"/>
                             <constraint firstItem="vWY-dM-T9Z" firstAttribute="centerX" secondItem="e4x-ai-1hN" secondAttribute="centerX" id="e5k-W7-mS5"/>
@@ -525,11 +525,27 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NnL-Yc-5mU">
+                                <rect key="frame" x="0.0" y="27" width="41" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="41" id="h2a-Fw-3km"/>
+                                </constraints>
+                                <size key="titleShadowOffset" width="-1" height="-1"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.82132425350000005" green="1" blue="0.81984718940000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.069466095970000002" green="0.20178345959999999" blue="0.045736187800000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="e5s-Tc-cTw" kind="presentation" id="qpx-2G-6Yx"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="IbD-v5-CzB" firstAttribute="top" secondItem="xzm-6w-E03" secondAttribute="bottom" constant="8" id="Lvx-lj-XHU"/>
+                            <constraint firstItem="NnL-Yc-5mU" firstAttribute="top" secondItem="xzm-6w-E03" secondAttribute="bottom" constant="7" id="fkr-Oc-JQw"/>
                             <constraint firstItem="IbD-v5-CzB" firstAttribute="centerX" secondItem="hnC-Xy-YOT" secondAttribute="centerX" id="g5u-Ct-lbq"/>
+                            <constraint firstItem="NnL-Yc-5mU" firstAttribute="leading" secondItem="hnC-Xy-YOT" secondAttribute="leadingMargin" constant="-20" id="o4f-PF-cio"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
@@ -624,7 +640,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="1gi-tU-qUB">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="313"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleAspectFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="XgJ-KN-fWP">
+                                    <stackView opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="XgJ-KN-fWP">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="313"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="NtH-I0-JUm">
@@ -774,6 +790,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Sf9-Jb-Snn"/>
+        <segue reference="qpx-2G-6Yx"/>
         <segue reference="tCe-iY-3dG"/>
     </inferredMetricsTieBreakers>
 </document>
