@@ -16,7 +16,6 @@ import UIKit
 /// login page :)
 class LoginPageViewController: UIViewController {
     /// test Documentation
-    let loginBG = UIImage(named: "loginPage-BG")
     
     @IBOutlet weak var wrongInfo: UILabel!
     
@@ -29,9 +28,7 @@ class LoginPageViewController: UIViewController {
         
         wrongInfo.hidden = true
         // MARK: Background Layer
-        
-        self.view.backgroundColor = UIColor(patternImage: loginBG!)
-        
+                
     }
     
     override func didReceiveMemoryWarning() {
