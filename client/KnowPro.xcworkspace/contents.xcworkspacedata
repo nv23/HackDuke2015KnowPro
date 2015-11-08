@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:../../Desktop/KnowPro/croppedloginbutton.gif">
+      location = "group:CourseDescriptionViewController.swift">
    </FileRef>
    <FileRef
       location = "group:KnowPro.xcodeproj">
