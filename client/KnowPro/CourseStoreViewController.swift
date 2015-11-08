@@ -14,7 +14,7 @@ class CourseStoreViewController: UIViewController, iCarouselDataSource, iCarouse
     
     var courses : NSMutableArray = ["art", "chemistry", "econ", "french", "history", "linear algebra", "literature", "modern biology"];
     
-    
+    var selectCourse = CourseContent()
     
     @IBOutlet weak var vwCarousel: iCarousel!
 
@@ -22,6 +22,15 @@ class CourseStoreViewController: UIViewController, iCarouselDataSource, iCarouse
         super.viewDidLoad()
         vwCarousel.type = iCarouselType.Cylinder
         vwCarousel .reloadData()
+        
+        NetworkingCourse.CourseName = "Computer Network Architecture"
+        NetworkingCourse.Lessons = [NetworkLesson1,NetworkLesson2,NetworkLesson3,NetworkLesson4,NetworkLesson5,NetworkLesson6, NetworkLesson7,NetworkLesson8,NetworkLesson9, NetworkLesson10]
+        NetworkingCourse.CourseQuality = [1,3,4,5]
+        NetworkingCourse.Difficulty = [5,4,2,3]
+        NetworkingCourse.WorkloadPerWeek = [3, 8, 5, 4]
+        NetworkingCourse.InstructorQuality = [3,2,4,1]
+        NetworkingCourse.StudentEngagement = [3,4,5,2]
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -62,6 +71,14 @@ class CourseStoreViewController: UIViewController, iCarouselDataSource, iCarouse
         return true;
     }
     
+    func carousel(carousel: iCarousel, didSelectItemAtIndex index: Int)
+    {
+        if courses[index] as! String == "modern biology" {
+            selectCourse = NetworkingCourse
+        }
+        performSegueWithIdentifier("CarouselSegue", sender: nil)
+    }
+    
     
     
     // MARK: - Navigation
@@ -70,8 +87,8 @@ class CourseStoreViewController: UIViewController, iCarouselDataSource, iCarouse
     {
         if (segue.identifier == "CarouselSegue")
         {
-            var viewController : CourseDescriptionViewController = segue.destinationViewController as! CourseDescriptionViewController
-            //viewController.selectedImage = UIImage(named: "\(images.objectAtIndex(selectedIndex))")
+            let viewController : CourseDescriptionViewController = segue.destinationViewController as! CourseDescriptionViewController
+            viewController.selectedCourse = selectCourse
         }
     }
 }

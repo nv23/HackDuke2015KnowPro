@@ -421,6 +421,9 @@
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="CourseName" destination="UI5-TX-nkR" id="2Dl-kE-ee0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iIS-Ul-m3r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
