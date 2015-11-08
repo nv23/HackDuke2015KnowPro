@@ -9,12 +9,10 @@
 import UIKit
 import youtube_ios_player_helper
 
-class LessonPlayViewController: UIViewController, YTPlayerViewDelegate{
+class LessonPlayViewController: UIViewController{
     
     var lesson : LessonContent!
     @IBOutlet var webView : UIWebView!
-    
-    @IBOutlet var playerView : YTPlayerView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +20,7 @@ class LessonPlayViewController: UIViewController, YTPlayerViewDelegate{
         self.webView.allowsInlineMediaPlayback = true
         self.webView.mediaPlaybackRequiresUserAction = false
         
-        let embedString = "<iframe width=\"420\" height=\"315\" src=\"https://www.youtube.com/embed/hT6wXEhmXEU\" frameborder=\"0\" allowfullscreen></iframe>"
+        let embedString = lesson.VideoURL
         
         self.webView.loadHTMLString(embedString, baseURL: nil)
     }

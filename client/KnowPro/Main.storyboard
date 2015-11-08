@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8152.3" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Nq3-rd-eVJ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Nq3-rd-eVJ">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8124.4"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -36,7 +36,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="82V-2r-V7I">
                                 <rect key="frame" x="20" y="28" width="69" height="21"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Featured" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3qh-MP-5MA">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Featured" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3qh-MP-5MA">
                                         <rect key="frame" x="0.0" y="0.0" width="69" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -476,27 +476,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Lesson Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EHj-HU-9eC">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lesson Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EHj-HU-9eC">
                                 <rect key="frame" x="106" y="33" width="109" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="RXW-IP-ZVU"/>
-                                    <constraint firstAttribute="width" constant="109" id="hQx-43-Eme"/>
+                                    <constraint firstAttribute="height" constant="50" id="SRX-cW-MI4"/>
+                                    <constraint firstAttribute="width" constant="109" id="oWR-qd-CQP"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g8v-Ob-xPu">
-                                <rect key="frame" x="10" y="184" width="300" height="200"/>
+                                <rect key="frame" x="10" y="99" width="300" height="200"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="Ucz-x6-zt9"/>
+                                </constraints>
                             </webView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JqU-vc-auq">
+                                <rect key="frame" x="40" y="336" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="g8v-Ob-xPu" firstAttribute="centerY" secondItem="u0j-t7-7yO" secondAttribute="centerY" id="Eae-Kk-38A"/>
-                            <constraint firstItem="kKN-hX-Eel" firstAttribute="top" secondItem="g8v-Ob-xPu" secondAttribute="bottom" constant="140" id="U79-g2-BLU"/>
-                            <constraint firstItem="g8v-Ob-xPu" firstAttribute="centerX" secondItem="u0j-t7-7yO" secondAttribute="centerX" id="aMc-sQ-DUY"/>
-                            <constraint firstAttribute="trailing" secondItem="g8v-Ob-xPu" secondAttribute="trailing" constant="10" id="r8X-PE-kbf"/>
+                            <constraint firstItem="g8v-Ob-xPu" firstAttribute="leading" secondItem="u0j-t7-7yO" secondAttribute="leadingMargin" constant="-6" id="8eX-CX-7Vt"/>
+                            <constraint firstItem="g8v-Ob-xPu" firstAttribute="centerX" secondItem="u0j-t7-7yO" secondAttribute="centerX" id="DYX-jt-nb8"/>
+                            <constraint firstItem="EHj-HU-9eC" firstAttribute="centerX" secondItem="u0j-t7-7yO" secondAttribute="centerX" id="GGo-OR-anQ"/>
+                            <constraint firstItem="EHj-HU-9eC" firstAttribute="top" secondItem="RS7-0y-ifh" secondAttribute="bottom" constant="13" id="gbG-tJ-YIX"/>
+                            <constraint firstItem="kKN-hX-Eel" firstAttribute="top" secondItem="g8v-Ob-xPu" secondAttribute="bottom" constant="225" id="lUG-5s-fab"/>
+                            <constraint firstItem="g8v-Ob-xPu" firstAttribute="top" secondItem="EHj-HU-9eC" secondAttribute="bottom" constant="16" id="mBC-nO-Bac"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
@@ -820,7 +829,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="1gi-tU-qUB">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="313"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="XgJ-KN-fWP">
+                                    <stackView opaque="NO" contentMode="scaleAspectFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="XgJ-KN-fWP">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="313"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="NtH-I0-JUm">
