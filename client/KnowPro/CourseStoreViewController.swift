@@ -59,14 +59,15 @@ class CourseStoreViewController: UIViewController, iCarouselDataSource, iCarouse
     }
     
     
-    /*
+    
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!)
+    {
+        if (segue.identifier == "CarouselSegue")
+        {
+            var viewController : CourseDescriptionViewController = segue.destinationViewController as! CourseDescriptionViewController
+            //viewController.selectedImage = UIImage(named: "\(images.objectAtIndex(selectedIndex))")
+        }
     }
-    */
-
 }
