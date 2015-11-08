@@ -13,6 +13,8 @@
             <string>Avenir-Black</string>
             <string>Avenir-Black</string>
             <string>Avenir-Black</string>
+            <string>Avenir-Black</string>
+            <string>Avenir-Black</string>
         </mutableArray>
         <mutableArray key="HelveticaNeueLights.ttc">
             <string>HelveticaNeue-Light</string>
@@ -535,6 +537,87 @@
             <point key="canvasLocation" x="1600" y="394"/>
         </scene>
         <!--View Controller-->
+        <scene sceneID="WHr-N6-bAH">
+            <objects>
+                <viewController id="7hi-ZV-XWr" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UPj-Sd-EHP"/>
+                        <viewControllerLayoutGuide type="bottom" id="so7-uT-ZHd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Qiu-dE-5KF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Homework 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="phB-2n-MCI">
+                                <rect key="frame" x="20" y="45" width="280" height="40"/>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="25"/>
+                                <color key="textColor" red="0.23862756700000001" green="0.46922348479999998" blue="0.2060108947" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Lesson 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xfb-FJ-MKm">
+                                <rect key="frame" x="20" y="93" width="280" height="40"/>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="17"/>
+                                <color key="textColor" red="0.23862756700000001" green="0.46922348479999998" blue="0.2060108947" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Format: Multiple Choice" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IbV-N5-Cyl">
+                                <rect key="frame" x="20" y="222" width="183" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Questions: 10" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EcU-ZI-sBx">
+                                <rect key="frame" x="20" y="260" width="105" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Estimated Time: 30 min" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H8y-3z-AUQ">
+                                <rect key="frame" x="20" y="296" width="181" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Topic: Semiconductors" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X8b-S2-MZy">
+                                <rect key="frame" x="20" y="183" width="176" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vX2-Xj-ngd">
+                                <rect key="frame" x="84" y="395" width="153" height="153"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="vX2-Xj-ngd" secondAttribute="height" multiplier="1:1" id="R7J-Iw-1Io"/>
+                                    <constraint firstAttribute="width" constant="153" id="ruj-EX-ncl"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="start_button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EcU-ZI-sBx" firstAttribute="top" secondItem="IbV-N5-Cyl" secondAttribute="bottom" constant="17" id="7NO-bB-nzg"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="IbV-N5-Cyl" secondAttribute="leading" id="ERr-Y4-Pr4"/>
+                            <constraint firstItem="IbV-N5-Cyl" firstAttribute="top" secondItem="X8b-S2-MZy" secondAttribute="bottom" constant="18" id="F4X-zj-MH8"/>
+                            <constraint firstItem="phB-2n-MCI" firstAttribute="top" secondItem="UPj-Sd-EHP" secondAttribute="bottom" constant="25" id="FB1-bE-tiX"/>
+                            <constraint firstItem="vX2-Xj-ngd" firstAttribute="centerX" secondItem="Qiu-dE-5KF" secondAttribute="centerX" id="LLQ-D4-SPe"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="H8y-3z-AUQ" secondAttribute="leading" id="LVj-vS-U6s"/>
+                            <constraint firstItem="xfb-FJ-MKm" firstAttribute="centerX" secondItem="Qiu-dE-5KF" secondAttribute="centerX" id="UKb-1A-6IK"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="X8b-S2-MZy" secondAttribute="leading" id="X4j-7E-4jV"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="EcU-ZI-sBx" secondAttribute="leading" id="Z4V-po-oCK"/>
+                            <constraint firstItem="X8b-S2-MZy" firstAttribute="top" secondItem="xfb-FJ-MKm" secondAttribute="bottom" constant="50" id="buH-n3-wYA"/>
+                            <constraint firstItem="phB-2n-MCI" firstAttribute="centerX" secondItem="Qiu-dE-5KF" secondAttribute="centerX" id="eSk-pn-AcY"/>
+                            <constraint firstItem="xfb-FJ-MKm" firstAttribute="top" secondItem="phB-2n-MCI" secondAttribute="bottom" constant="8" id="h5v-Ku-r2q"/>
+                            <constraint firstItem="H8y-3z-AUQ" firstAttribute="top" secondItem="EcU-ZI-sBx" secondAttribute="bottom" constant="15" id="hx9-PS-Q7u"/>
+                            <constraint firstItem="so7-uT-ZHd" firstAttribute="top" secondItem="vX2-Xj-ngd" secondAttribute="bottom" constant="20" id="vev-A7-UnZ"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vr8-oP-g9I" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2336" y="389"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="rau-VP-3jd">
             <objects>
                 <viewController id="qTL-Jh-xiU" sceneMemberID="viewController">
@@ -825,11 +908,12 @@
         <image name="imageMask" width="320" height="313"/>
         <image name="logo2_Fotor" width="116" height="116"/>
         <image name="star" width="267" height="256"/>
+        <image name="start_button" width="213" height="213"/>
         <image name="view-offer-button" width="181" height="60"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Sf9-Jb-Snn"/>
-        <segue reference="oNV-MF-7FS"/>
+        <segue reference="qpx-2G-6Yx"/>
         <segue reference="tCe-iY-3dG"/>
+        <segue reference="Sf9-Jb-Snn"/>
     </inferredMetricsTieBreakers>
 </document>
