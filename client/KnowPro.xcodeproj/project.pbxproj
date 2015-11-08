@@ -12,6 +12,7 @@
 		2B9EB562BDAB81094102C2FE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B26AE5086B67DE0C811957F /* libPods.a */; };
 		53381E551BEEA3A400A45C39 /* CourseStoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53381E541BEEA3A400A45C39 /* CourseStoreViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		53381E611BEED26000A45C39 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53381E5A1BEEAED000A45C39 /* QuartzCore.framework */; };
+		53381E631BEEDFEA00A45C39 /* LessonContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53381E621BEEDFEA00A45C39 /* LessonContent.swift */; settings = {ASSET_TAGS = (); }; };
 		53391E111BE74975004C26A2 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53391E101BE74975004C26A2 /* SwiftyJSON.swift */; settings = {ASSET_TAGS = (); }; };
 		53F0C7C71BCA212300FD66CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F0C7C61BCA212300FD66CF /* AppDelegate.swift */; };
 		53F0C7D11BCA212300FD66CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53F0C7CF1BCA212300FD66CF /* Main.storyboard */; };
@@ -20,7 +21,7 @@
 		53F0C7E11BCA212300FD66CF /* KnowProTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F0C7E01BCA212300FD66CF /* KnowProTests.swift */; };
 		53F0C7EC1BCA212400FD66CF /* KnowProUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F0C7EB1BCA212400FD66CF /* KnowProUITests.swift */; };
 		840CA7F21BEEA3290011360D /* CourseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840CA7F11BEEA3290011360D /* CourseViewController.swift */; };
-		840CA7F41BEEA3D70011360D /* CourseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840CA7F31BEEA3D70011360D /* CourseCell.swift */; };
+		840CA7F41BEEA3D70011360D /* CourseContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840CA7F31BEEA3D70011360D /* CourseContent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		43AF7A0816A3910747EAFB0B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		53381E541BEEA3A400A45C39 /* CourseStoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseStoreViewController.swift; sourceTree = "<group>"; };
 		53381E5A1BEEAED000A45C39 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		53381E621BEEDFEA00A45C39 /* LessonContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LessonContent.swift; sourceTree = "<group>"; };
 		53391E101BE74975004C26A2 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		53F0C7C31BCA212300FD66CF /* KnowPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KnowPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53F0C7C61BCA212300FD66CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -62,7 +64,7 @@
 		53F0C7ED1BCA212400FD66CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		748BC517056D4691454CAED7 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		840CA7F11BEEA3290011360D /* CourseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseViewController.swift; sourceTree = "<group>"; };
-		840CA7F31BEEA3D70011360D /* CourseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseCell.swift; sourceTree = "<group>"; };
+		840CA7F31BEEA3D70011360D /* CourseContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseContent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,7 +137,8 @@
 				53F0C7D41BCA212300FD66CF /* LaunchScreen.storyboard */,
 				53F0C7D71BCA212300FD66CF /* Info.plist */,
 				840CA7F11BEEA3290011360D /* CourseViewController.swift */,
-				840CA7F31BEEA3D70011360D /* CourseCell.swift */,
+				840CA7F31BEEA3D70011360D /* CourseContent.swift */,
+				53381E621BEEDFEA00A45C39 /* LessonContent.swift */,
 			);
 			path = KnowPro;
 			sourceTree = "<group>";
@@ -361,10 +364,11 @@
 				53381E551BEEA3A400A45C39 /* CourseStoreViewController.swift in Sources */,
 				1FE42F1E1BEDA52500354065 /* RegisterPageViewController.swift in Sources */,
 				53F0C7C71BCA212300FD66CF /* AppDelegate.swift in Sources */,
-				840CA7F41BEEA3D70011360D /* CourseCell.swift in Sources */,
+				840CA7F41BEEA3D70011360D /* CourseContent.swift in Sources */,
 				1FE42F1D1BEDA52500354065 /* LoginPageViewController.swift in Sources */,
 				53391E111BE74975004C26A2 /* SwiftyJSON.swift in Sources */,
 				840CA7F21BEEA3290011360D /* CourseViewController.swift in Sources */,
+				53381E631BEEDFEA00A45C39 /* LessonContent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
