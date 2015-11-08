@@ -21,8 +21,12 @@
 		53F0C7E11BCA212300FD66CF /* KnowProTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F0C7E01BCA212300FD66CF /* KnowProTests.swift */; };
 		53F0C7EC1BCA212400FD66CF /* KnowProUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F0C7EB1BCA212400FD66CF /* KnowProUITests.swift */; };
 		840CA7F21BEEA3290011360D /* CourseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840CA7F11BEEA3290011360D /* CourseViewController.swift */; };
+<<<<<<< HEAD
 		840CA7F41BEEA3D70011360D /* CourseContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840CA7F31BEEA3D70011360D /* CourseContent.swift */; };
+=======
+		840CA7F41BEEA3D70011360D /* CourseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840CA7F31BEEA3D70011360D /* CourseCell.swift */; };
 		840CA7F81BEEE18E0011360D /* LessonOutlineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840CA7F71BEEE18E0011360D /* LessonOutlineViewController.swift */; };
+>>>>>>> db280f1152eb1326b7e0966f4f97e8623c2c276f
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,8 +69,12 @@
 		53F0C7ED1BCA212400FD66CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		748BC517056D4691454CAED7 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		840CA7F11BEEA3290011360D /* CourseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseViewController.swift; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		840CA7F31BEEA3D70011360D /* CourseContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseContent.swift; sourceTree = "<group>"; };
+=======
+		840CA7F31BEEA3D70011360D /* CourseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseCell.swift; sourceTree = "<group>"; };
 		840CA7F71BEEE18E0011360D /* LessonOutlineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LessonOutlineViewController.swift; sourceTree = "<group>"; };
+>>>>>>> db280f1152eb1326b7e0966f4f97e8623c2c276f
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,9 +147,13 @@
 				53F0C7D41BCA212300FD66CF /* LaunchScreen.storyboard */,
 				53F0C7D71BCA212300FD66CF /* Info.plist */,
 				840CA7F11BEEA3290011360D /* CourseViewController.swift */,
+<<<<<<< HEAD
 				840CA7F31BEEA3D70011360D /* CourseContent.swift */,
 				53381E621BEEDFEA00A45C39 /* LessonContent.swift */,
+=======
 				840CA7F71BEEE18E0011360D /* LessonOutlineViewController.swift */,
+				840CA7F31BEEA3D70011360D /* CourseCell.swift */,
+>>>>>>> db280f1152eb1326b7e0966f4f97e8623c2c276f
 			);
 			path = KnowPro;
 			sourceTree = "<group>";
