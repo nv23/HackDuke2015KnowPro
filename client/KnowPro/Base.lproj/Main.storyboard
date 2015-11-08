@@ -878,13 +878,14 @@
                                 <state key="normal" title="Register"/>
                                 <connections>
                                     <action selector="register:" destination="LfV-te-tqQ" eventType="touchUpInside" id="R2A-rc-FUR"/>
+                                    <segue destination="2Y3-A9-GsT" kind="show" id="JOh-j6-313"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Wp-Mz-erf">
-                                <rect key="frame" x="110" y="518" width="101" height="30"/>
-                                <state key="normal" title="continue log in"/>
+                                <rect key="frame" x="110" y="518" width="93" height="30"/>
+                                <state key="normal" title="back to log in"/>
                                 <connections>
-                                    <segue destination="2Y3-A9-GsT" kind="show" id="EpK-nG-e4a"/>
+                                    <segue destination="Nq3-rd-eVJ" kind="show" id="fha-o1-wWR"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -920,8 +921,8 @@
         <image name="view-offer-button" width="181" height="60"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Oqz-hm-aEp"/>
+        <segue reference="JOh-j6-313"/>
         <segue reference="qpx-2G-6Yx"/>
-        <segue reference="Sf9-Jb-Snn"/>
+        <segue reference="Oqz-hm-aEp"/>
     </inferredMetricsTieBreakers>
 </document>
