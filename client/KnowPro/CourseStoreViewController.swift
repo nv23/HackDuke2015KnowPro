@@ -8,13 +8,9 @@
 
 import UIKit
 
-var NetworkingCourse = CourseContent()
-
 class CourseStoreViewController: UIViewController, iCarouselDataSource, iCarouselDelegate {
     
     var courses : NSMutableArray = ["art", "chemistry", "econ", "french", "history", "linear algebra", "literature", "modern biology"];
-    
-    var selectCourse = CourseContent()
     
     @IBOutlet weak var vwCarousel: iCarousel!
 
@@ -22,15 +18,6 @@ class CourseStoreViewController: UIViewController, iCarouselDataSource, iCarouse
         super.viewDidLoad()
         vwCarousel.type = iCarouselType.Cylinder
         vwCarousel .reloadData()
-        
-        NetworkingCourse.CourseName = "Computer Network Architecture"
-        NetworkingCourse.Lessons = [NetworkLesson1,NetworkLesson2,NetworkLesson3,NetworkLesson4,NetworkLesson5,NetworkLesson6, NetworkLesson7,NetworkLesson8,NetworkLesson9, NetworkLesson10]
-        NetworkingCourse.CourseQuality = [1,3,4,5]
-        NetworkingCourse.Difficulty = [5,4,2,3]
-        NetworkingCourse.WorkloadPerWeek = [3, 8, 5, 4]
-        NetworkingCourse.InstructorQuality = [3,2,4,1]
-        NetworkingCourse.StudentEngagement = [3,4,5,2]
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -71,24 +58,15 @@ class CourseStoreViewController: UIViewController, iCarouselDataSource, iCarouse
         return true;
     }
     
-    func carousel(carousel: iCarousel, didSelectItemAtIndex index: Int)
-    {
-        if courses[index] as! String == "modern biology" {
-            selectCourse = NetworkingCourse
-        }
-        performSegueWithIdentifier("CarouselSegue", sender: nil)
-    }
     
-    
-    
+    /*
     // MARK: - Navigation
 
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!)
-    {
-        if (segue.identifier == "CarouselSegue")
-        {
-            let viewController : CourseDescriptionViewController = segue.destinationViewController as! CourseDescriptionViewController
-            viewController.selectedCourse = selectCourse
-        }
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
     }
+    */
+
 }

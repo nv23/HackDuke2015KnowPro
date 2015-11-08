@@ -2,9 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:CourseDescriptionViewController.swift">
-   </FileRef>
-   <FileRef
       location = "group:KnowPro.xcodeproj">
    </FileRef>
    <FileRef

@@ -371,7 +371,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				53381E551BEEA3A400A45C39 /* CourseStoreViewController.swift in Sources */,
-				53381E691BEEFEBE00A45C39 /* CourseDescriptionViewController.swift in Sources */,
 				1FE42F1E1BEDA52500354065 /* RegisterPageViewController.swift in Sources */,
 				53F0C7C71BCA212300FD66CF /* AppDelegate.swift in Sources */,
 				840CA7F41BEEA3D70011360D /* CourseContent.swift in Sources */,
@@ -380,7 +379,6 @@
 				53391E111BE74975004C26A2 /* SwiftyJSON.swift in Sources */,
 				840CA7F21BEEA3290011360D /* CourseViewController.swift in Sources */,
 				53381E631BEEDFEA00A45C39 /* LessonContent.swift in Sources */,
-				53381E671BEEF3F300A45C39 /* Lesson.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
