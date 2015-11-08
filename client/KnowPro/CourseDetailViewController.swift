@@ -25,4 +25,18 @@ class CourseDescriptionViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func CourseOutline(sender : UIButton){
+        performSegueWithIdentifier("LessonContentSegue", sender: nil)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!)
+    {
+        if (segue.identifier == "LessonContentSegue")
+        {
+            let viewController : LessonOutlineViewController = segue.destinationViewController as! LessonOutlineViewController
+            viewController.lessons = selectedCourse.Lessons
+        }
+    }
+
+    
 }

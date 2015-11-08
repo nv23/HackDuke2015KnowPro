@@ -11,7 +11,7 @@ import UIKit
 
 class LessonOutlineViewController: UITableViewController {
     
-    var lessons = ["L1", "L2", "L3"]
+    var lessons = [LessonContent]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,7 +34,7 @@ class LessonOutlineViewController: UITableViewController {
         
         let l_cell = dequeued as! UITableViewCell
         
-        l_cell.textLabel?.text = lessons[indexPath.row]
+        l_cell.textLabel?.text = lessons[indexPath.row].Name
         
         l_cell.backgroundColor = UIColor(red: 1, green: 0.9, blue: 0.8, alpha: 1)
         

@@ -383,7 +383,8 @@
                                     <color key="titleShadowColor" red="0.14037944960000001" green="0.4247948232" blue="0.17790199300000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="6bF-Eh-iCq" kind="show" id="VqQ-7x-oWY"/>
+                                    <action selector="CourseOutline:" destination="kPc-Df-ApN" eventType="touchUpInside" id="84O-18-FPW"/>
+                                    <segue destination="6bF-Eh-iCq" kind="show" identifier="LessonContentSegue" id="VqQ-7x-oWY"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -459,6 +460,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wli-bb-ItM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1600" y="394"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="eDo-TO-n5i">
+            <objects>
+                <viewController id="zAw-CM-gOz" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RS7-0y-ifh"/>
+                        <viewControllerLayoutGuide type="bottom" id="kKN-hX-Eel"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleAspectFit" id="u0j-t7-7yO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Bd-J4-rfg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2051" y="394"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="WHr-N6-bAH">
@@ -539,7 +559,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vr8-oP-g9I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2336" y="389"/>
+            <point key="canvasLocation" x="2724" y="429"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="rau-VP-3jd">

@@ -137,17 +137,17 @@
 				53F0C7C61BCA212300FD66CF /* AppDelegate.swift */,
 				53381E6C1BEF248800A45C39 /* Lessons.swift */,
 				53381E6A1BEF1C8100A45C39 /* Main.storyboard */,
-				53381E541BEEA3A400A45C39 /* CourseStoreViewController.swift */,
 				1FE42F1A1BEDA52500354065 /* LoginPageViewController.swift */,
-				53381E701BEF251E00A45C39 /* CourseDetailViewController.swift */,
 				1FE42F1B1BEDA52500354065 /* RegisterPageViewController.swift */,
-				53F0C7D21BCA212300FD66CF /* Assets.xcassets */,
-				53F0C7D41BCA212300FD66CF /* LaunchScreen.storyboard */,
+				53381E541BEEA3A400A45C39 /* CourseStoreViewController.swift */,
+				53381E701BEF251E00A45C39 /* CourseDetailViewController.swift */,
+				840CA7F71BEEE18E0011360D /* LessonOutlineViewController.swift */,
 				53F0C7D71BCA212300FD66CF /* Info.plist */,
+				53F0C7D41BCA212300FD66CF /* LaunchScreen.storyboard */,
 				840CA7F11BEEA3290011360D /* CourseViewController.swift */,
 				840CA7F31BEEA3D70011360D /* CourseContent.swift */,
 				53381E621BEEDFEA00A45C39 /* LessonContent.swift */,
-				840CA7F71BEEE18E0011360D /* LessonOutlineViewController.swift */,
+				53F0C7D21BCA212300FD66CF /* Assets.xcassets */,
 			);
 			path = KnowPro;
 			sourceTree = "<group>";
