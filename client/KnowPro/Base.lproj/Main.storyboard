@@ -573,6 +573,12 @@
                                 <color key="textColor" red="0.11267307075633708" green="0.32471196338383834" blue="0.22193941201706052" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OR" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tv5-9V-ZNA">
+                                <rect key="frame" x="148" y="389" width="24" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Promo code:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Irh-qa-TJo">
                                 <rect key="frame" x="111" y="273" width="98" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -611,10 +617,11 @@
                                     <segue destination="e5s-Tc-cTw" kind="presentation" id="qpx-2G-6Yx"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cKf-1R-ma6">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Promo code" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cKf-1R-ma6">
                                 <rect key="frame" x="23" y="335" width="213" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="213" id="CcT-1m-hL5"/>
+                                    <constraint firstAttribute="height" constant="30" id="bAq-VD-2nQ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -627,26 +634,20 @@
                                 </constraints>
                                 <state key="normal" title="Button" image="ordernow-green"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N6O-np-iWr">
-                                <rect key="frame" x="248" y="331" width="37" height="37"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N6O-np-iWr">
+                                <rect key="frame" x="248" y="331" width="34" height="37"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="N6O-np-iWr" secondAttribute="height" multiplier="1:1" id="P3W-VT-rXO"/>
-                                    <constraint firstAttribute="width" constant="37" id="VFh-d7-ru5"/>
+                                    <constraint firstAttribute="height" constant="37" id="jHC-t3-qIQ"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="goArrow"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OR" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tv5-9V-ZNA">
-                                <rect key="frame" x="148" y="389" width="24" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="hj3-5v-TbX" firstAttribute="leading" secondItem="hnC-Xy-YOT" secondAttribute="leadingMargin" constant="6" id="0Lt-wq-xdS"/>
                             <constraint firstItem="Tv5-9V-ZNA" firstAttribute="centerX" secondItem="hnC-Xy-YOT" secondAttribute="centerX" id="13E-bn-Agf"/>
                             <constraint firstItem="cKf-1R-ma6" firstAttribute="top" secondItem="hj3-5v-TbX" secondAttribute="bottom" constant="17" id="2KH-5r-tS6"/>
+                            <constraint firstItem="N6O-np-iWr" firstAttribute="baseline" secondItem="cKf-1R-ma6" secondAttribute="baseline" id="2bT-EM-gU2"/>
                             <constraint firstItem="hj3-5v-TbX" firstAttribute="top" secondItem="Irh-qa-TJo" secondAttribute="bottom" constant="3" id="6LI-tI-LXE"/>
                             <constraint firstItem="1US-yY-hqn" firstAttribute="top" secondItem="Bp5-Vg-zV9" secondAttribute="bottom" constant="8" id="6Nq-N2-MFK"/>
                             <constraint firstItem="Irh-qa-TJo" firstAttribute="centerX" secondItem="hnC-Xy-YOT" secondAttribute="centerX" id="6ds-zV-nbl"/>
@@ -657,7 +658,6 @@
                             <constraint firstItem="Irh-qa-TJo" firstAttribute="centerY" secondItem="hnC-Xy-YOT" secondAttribute="centerY" id="ChO-8N-dzN"/>
                             <constraint firstAttribute="leadingMargin" secondItem="oaX-ow-VdD" secondAttribute="leading" id="EPw-6I-GTc"/>
                             <constraint firstItem="IbD-v5-CzB" firstAttribute="top" secondItem="xzm-6w-E03" secondAttribute="bottom" constant="8" id="Lvx-lj-XHU"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="N6O-np-iWr" secondAttribute="trailing" constant="15" id="MDT-rB-TgN"/>
                             <constraint firstAttribute="leadingMargin" secondItem="h2m-q0-ffF" secondAttribute="leading" id="MFN-gX-Mnr"/>
                             <constraint firstAttribute="trailingMargin" secondItem="mS7-z0-bpo" secondAttribute="trailing" constant="6" id="MGT-uO-dPn"/>
                             <constraint firstItem="h2m-q0-ffF" firstAttribute="top" secondItem="mS7-z0-bpo" secondAttribute="bottom" constant="16" id="MbY-EC-zuu"/>
@@ -673,7 +673,6 @@
                             <constraint firstItem="mS7-z0-bpo" firstAttribute="top" secondItem="oaX-ow-VdD" secondAttribute="bottom" constant="17" id="lNI-VR-kSh"/>
                             <constraint firstItem="NnL-Yc-5mU" firstAttribute="leading" secondItem="hnC-Xy-YOT" secondAttribute="leadingMargin" constant="-20" id="o4f-PF-cio"/>
                             <constraint firstAttribute="trailingMargin" secondItem="hj3-5v-TbX" secondAttribute="trailing" constant="6" id="ocQ-jd-qZ6"/>
-                            <constraint firstItem="Tv5-9V-ZNA" firstAttribute="top" secondItem="cKf-1R-ma6" secondAttribute="bottom" constant="24" id="sny-p2-fgP"/>
                             <constraint firstItem="N6O-np-iWr" firstAttribute="leading" secondItem="cKf-1R-ma6" secondAttribute="trailing" constant="12" id="v84-mC-fHT"/>
                         </constraints>
                     </view>
