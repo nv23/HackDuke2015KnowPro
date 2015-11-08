@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Nq3-rd-eVJ">
     <dependencies>
+<<<<<<< HEAD
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+=======
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8124.4"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+>>>>>>> refs/remotes/origin/master
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="ArialHB.ttc">
             <string>ArialHebrew</string>
-        </mutableArray>
-        <mutableArray key="Avenir.ttc">
-            <string>Avenir-Black</string>
         </mutableArray>
         <mutableArray key="HelveticaNeueLights.ttc">
             <string>HelveticaNeue-Light</string>
@@ -339,12 +340,19 @@
                                     <segue destination="rcu-qE-qhD" kind="show" id="tCe-iY-3dG"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Upgrade to premium to get your" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vig-fb-eoo">
-                                <rect key="frame" x="17" y="432" width="286" height="31"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Upgrade to premium to get your" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vig-fb-eoo">
+                                <rect key="frame" x="20" y="432" width="286" height="31"/>
                                 <color key="tintColor" red="0.21359009040797963" green="0.4702888257575758" blue="0.29690027028994825" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.2502066019100801" green="0.37271148989898994" blue="0.26592209308516401" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="highlightedColor" red="0.14781512290982171" green="0.31646543560606055" blue="0.13053396879923762" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="personal homework instructor!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pSF-Hk-bOs">
+                                <rect key="frame" x="20" y="452" width="286" height="31"/>
+                                <color key="tintColor" red="0.21359009040797963" green="0.4702888257575758" blue="0.29690027028994825" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.2502066019100801" green="0.37271148989898994" blue="0.26592209308516401" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.23042261093525795" green="0.31646543560606055" blue="0.22160107788940703" alpha="1" colorSpace="calibratedRGB"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GDq-jM-zMa">
                                 <rect key="frame" x="103" y="479" width="114" height="37"/>
@@ -357,19 +365,10 @@
                                     <segue destination="qTL-Jh-xiU" kind="show" id="3Em-B4-J5y"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="personal homework instructor!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pSF-Hk-bOs">
-                                <rect key="frame" x="17" y="452" width="286" height="31"/>
-                                <color key="tintColor" red="0.21359009040797963" green="0.4702888257575758" blue="0.29690027028994825" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.2502066019100801" green="0.37271148989898994" blue="0.26592209308516401" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="highlightedColor" red="0.23042261093525795" green="0.31646543560606055" blue="0.22160107788940703" alpha="1" colorSpace="calibratedRGB"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="sgL-mh-PNS" firstAttribute="width" secondItem="xku-89-w4E" secondAttribute="width" id="1bx-0M-I0M"/>
-                            <constraint firstItem="pSF-Hk-bOs" firstAttribute="centerX" secondItem="e4x-ai-1hN" secondAttribute="centerX" id="9Gr-y4-eLN"/>
-                            <constraint firstItem="pSF-Hk-bOs" firstAttribute="top" secondItem="vig-fb-eoo" secondAttribute="bottom" constant="-11" id="BrS-j1-IgG"/>
                             <constraint firstAttribute="leadingMargin" secondItem="UtG-yN-oY7" secondAttribute="leading" id="Brz-w4-UTJ"/>
                             <constraint firstItem="g6I-5v-AWg" firstAttribute="leading" secondItem="LQA-BS-4KM" secondAttribute="trailing" constant="8" id="Ew9-2O-ndp"/>
                             <constraint firstItem="sgL-mh-PNS" firstAttribute="centerY" secondItem="LQA-BS-4KM" secondAttribute="centerY" id="Mt7-nP-ktd"/>
@@ -389,7 +388,6 @@
                             <constraint firstItem="xku-89-w4E" firstAttribute="leading" secondItem="sgL-mh-PNS" secondAttribute="trailing" constant="8" id="kxx-JQ-pER"/>
                             <constraint firstItem="NvG-pI-BSZ" firstAttribute="leading" secondItem="e4x-ai-1hN" secondAttribute="leadingMargin" constant="-20" id="lZL-we-Mco"/>
                             <constraint firstItem="g6I-5v-AWg" firstAttribute="width" secondItem="g6I-5v-AWg" secondAttribute="height" multiplier="1:1" id="ljZ-L8-XIm"/>
-                            <constraint firstItem="vig-fb-eoo" firstAttribute="centerX" secondItem="e4x-ai-1hN" secondAttribute="centerX" id="lzl-zs-3As"/>
                             <constraint firstItem="sgL-mh-PNS" firstAttribute="width" secondItem="LQA-BS-4KM" secondAttribute="width" id="oiN-Td-O6B"/>
                             <constraint firstItem="sgL-mh-PNS" firstAttribute="centerY" secondItem="xku-89-w4E" secondAttribute="centerY" id="qak-T2-lg5"/>
                             <constraint firstItem="vWY-dM-T9Z" firstAttribute="top" secondItem="W2J-b4-RTb" secondAttribute="bottom" constant="8" id="qpZ-1E-glD"/>
@@ -420,30 +418,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Upgrade to Premium" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IbD-v5-CzB">
-                                <rect key="frame" x="20" y="28" width="280" height="40"/>
-                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="20"/>
-                                <color key="textColor" red="0.23862756704972621" green="0.46922348484848486" blue="0.20601089472891185" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Features:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AiH-5d-zsI">
-                                <rect key="frame" x="20" y="100" width="72" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Features:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oaX-ow-VdD">
-                                <rect key="frame" x="20" y="129" width="72" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Upgrade to Premium" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IbD-v5-CzB">
+                                <rect key="frame" x="81" y="28" width="159" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="IbD-v5-CzB" firstAttribute="top" secondItem="xzm-6w-E03" secondAttribute="bottom" constant="8" id="Lvx-lj-XHU"/>
-                            <constraint firstItem="IbD-v5-CzB" firstAttribute="centerX" secondItem="hnC-Xy-YOT" secondAttribute="centerX" id="g5u-Ct-lbq"/>
-                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
@@ -537,7 +519,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="1gi-tU-qUB">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="313"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleAspectFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="XgJ-KN-fWP">
+                                    <stackView opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="XgJ-KN-fWP">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="313"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="NtH-I0-JUm">
