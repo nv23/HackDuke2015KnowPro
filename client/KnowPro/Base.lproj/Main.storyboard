@@ -36,7 +36,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="82V-2r-V7I">
                                 <rect key="frame" x="20" y="28" width="69" height="21"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Featured" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3qh-MP-5MA">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Featured" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3qh-MP-5MA">
                                         <rect key="frame" x="0.0" y="0.0" width="69" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -227,7 +227,7 @@
                                     <color key="titleShadowColor" red="0.069466095969839547" green="0.20178345959595956" blue="0.045736187795767269" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="rcu-qE-qhD" kind="show" id="tCe-iY-3dG"/>
+                                    <segue destination="rcu-qE-qhD" kind="show" id="Oqz-hm-aEp"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="personal homework instructor!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pSF-Hk-bOs">
@@ -832,8 +832,8 @@
         <image name="view-offer-button" width="181" height="60"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="qpx-2G-6Yx"/>
-        <segue reference="tCe-iY-3dG"/>
+        <segue reference="Oqz-hm-aEp"/>
+        <segue reference="oNV-MF-7FS"/>
         <segue reference="Sf9-Jb-Snn"/>
     </inferredMetricsTieBreakers>
 </document>
